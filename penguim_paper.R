@@ -1,5 +1,6 @@
 
-#*** METALS PENGUINS *** METALS PENGUINS *** METALS PENGUINS ********
+#*** Manuscript in preparation - Mercury in Penguins
+
 
 # ------ Libraries and Functions --------------------------------- -----
 library(reshape)
