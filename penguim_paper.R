@@ -1,7 +1,6 @@
 
 #*** Manuscript in preparation - Mercury in Penguins
 
-
 # ------ Libraries and Functions --------------------------------- -----
 library(reshape)
 library(agricolae)
@@ -55,6 +54,7 @@ tukey <- function(data, group, method=c("Tukey", "Games-Howell")){
 
 
 # ------ Data Entry and organization ----------------------------- -----
+
 setwd("/Users/jfu/Documents/Projects & Manuscripts/manuscripts/Mercury Penguins/Data_&_Rcode")
 dir()
 peng.dat <- read.csv("/Users/jfu/Documents/Projects & Manuscripts/manuscripts/Mercury Penguins/Data_&_Rcode/data_peng_ok.csv", sep=",", header=TRUE)
@@ -118,7 +118,7 @@ peng_year_rj$body_cond
 
 # ------ ANOVA for Biometry and Hg across the years for Rio  --- -----
 
-#-------------------- Welch's F test Hg Muscle across Years ---
+#-------------------- Welch's F test Hg Muscle across Years ------
  
  
 by(peng_year_rj$Hg_M , peng_year_rj$Year, stat.desc)   #  library("pastecs")
